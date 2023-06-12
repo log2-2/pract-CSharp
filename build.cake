@@ -13,7 +13,15 @@ Task("Default")
 Task("variable")
 .Does(() =>
 {
-  Information("variable");
+  string name = "Enishi Tsuda";
+  int age = 21;
+  bool isAdult = true;
+  string[] color = {"purple", "lightblue", "lightgreen"};
+
+  Console.WriteLine("name ->" + name);
+  Console.WriteLine("age ->" + age.ToString());
+  Console.WriteLine("isAdult ->" + isAdult.ToString());
+  Console.WriteLine("color ->" + color[0] + ", " + color[1] + ", " + color[2]);
 });
 
 // 演算子
